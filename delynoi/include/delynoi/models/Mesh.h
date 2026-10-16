@@ -202,7 +202,7 @@ void Mesh<T>::createFromStream(std::ifstream &infile, int startIndex) {
 
 template <typename T>
 void Mesh<T>::printInFile(std::string fileName) {
-    std::string path = utilities::getPath();
+    std::string path = "";//utilities::getPath();
     path +=  fileName;
 
     std::ofstream file;
