@@ -1,5 +1,4 @@
-#ifndef DELYNOI_POINTGENERATOR_H
-#define DELYNOI_POINTGENERATOR_H
+#pragma once
 
 #include <delynoi/models/basic/Point.h>
 #include <delynoi/models/polygon/BoundingBox.h>
@@ -58,5 +57,3 @@ public:
      */
     virtual void generate(std::vector<Point>& vector, BoundingBox box, int nX, int nY);
 };
-
-#endif

@@ -41,7 +41,7 @@ bool Point::operator==(const Point &other) const{
 }
 
 
-Point Point::operator-(const Point &other) {
+Point Point::operator-(const Point &other) const {
     return Point(this->x - other.x, this->y - other.y);
 }
 
@@ -72,4 +72,11 @@ bool Point::operator<(const Point &other) const {
     }
 
     return this->x<other.x;
+}
+
+
+double distance(const Point& p, const Point& q)
+{
+    auto d = p-q;
+    return std::hypot(d.getX(), d.getY());
 }

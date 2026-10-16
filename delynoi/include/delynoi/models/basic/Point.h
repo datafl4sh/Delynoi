@@ -1,6 +1,4 @@
-#ifndef DELYNOI_POINT_H
-#define DELYNOI_POINT_H
-
+#pragma once
 #include <string>
 #include <math.h>
 #include <cmath>
@@ -80,7 +78,7 @@ public:
      * @param other point to operate with
      * @return the difference between the two points
      */
-    Point operator-(const Point& other);
+    Point operator-(const Point& other) const;
 
     /*
      * @return flag indicating if the point is in the boundary of the mesh
@@ -103,4 +101,4 @@ public:
     void setY(double newY);
 };
 
-#endif
+double distance(const Point& p, const Point& q);
