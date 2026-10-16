@@ -1,5 +1,4 @@
-#ifndef DELYNOI_TRIANGLEMESHGENERATOR_H
-#define DELYNOI_TRIANGLEMESHGENERATOR_H
+#pragma once
 
 #include <delynoi/voronoi/TriangleDelaunayGenerator.h>
 #include <delynoi/voronoi/structures/DelaunayInfo.h>
@@ -33,4 +32,3 @@ public:
     Mesh<Polygon>& getTriangulation();
 };
 
-#endif
